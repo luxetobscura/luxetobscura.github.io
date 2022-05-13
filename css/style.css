@@ -1,17 +1,19 @@
-body {
+body, html {
     background-color: #0d1117;
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emojisans-serif;
-    font-size: 32px;
-    color: #ffffff;
+    color: #eeeeee;
 }
+
 .center {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
-figure {
-    margin: auto;
+
+.logo  {
+    order: 1;
 }
-figcaption {
-    text-align: center;
+
+.main  {
+    order: 2;
 }
