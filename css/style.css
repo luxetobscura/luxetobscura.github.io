@@ -7,13 +7,9 @@ body, html {
 .center {
     display: flex;
     align-items: center;
+    align-content: center;
     justify-content: center;
 }
 
-.logo  {
-    order: 1;
-}
-
-.main  {
-    order: 2;
-}
+.logo  { order: 1; }
+.main  { order: 2; }
