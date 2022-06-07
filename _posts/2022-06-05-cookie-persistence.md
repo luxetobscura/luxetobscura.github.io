@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Load Balancers and HTTP Cookie Persistence"
-categories: load-balancers
+date: 2022-06-05
 ---
 ## How does cookie persistence work?
 
