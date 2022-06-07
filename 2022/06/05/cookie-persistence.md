@@ -1,11 +1,14 @@
-## Load Balancers and HTTP Cookie Persistence
-
-### Prerequisites
+---
+layout: post
+title: "Load Balancers and HTTP Cookie Persistence"
+categories: http, cookies, load-balancers
+---
+## Prerequisites
 
 - If a web application is secured with HTTPS, it should go without saying that any operation requiring the load balancer to modify the HTTP request or response (such as inserting an HTTP cookie header) will require the load balancer to terminate the client's TLS connection. That means configuring a public/private key pair for the X.509 certificate that the load balancer will present to the client, and sometimes also means ensuring that the load balancer can communicate with the backend web servers over HTTPS, which may require adding CA certificates to the load balancer if the backend servers use a private CA.
 - There may be other platform-specific pitfalls. For example, F5 BIG-IPs make load balancing decisions at layer 4 by default, and may continue to send a client to the same node with which the client initially established its TCP connection, even if the client's persistence cookie value changes. Additional configuration is required in order for the BIG-IP to (a) gain visibility into the client's HTTP session, and (b) ensure that the client's persistence cookie is evaluated on each HTTP request. F5 article [K7964](https://support.f5.com/csp/article/K7964) has details about these intricacies.
 
-### Troubleshooting
+## Troubleshooting
 
 Persistence cookies typically contain a hashed/encoded value that contains a specific node `address:port` combination. When the client's browser sends a request containing the persistence cookie, the load balancer directs the connection to the node specified in the cookie. When removing/decommissioning nodes from a load-balanced pool fronted by a virtual server that relies on cookie-insert persistence, keep in mind that clients will retain the persistence cookie that tells the load balancer to send them to a specific node. If not managed correctly, this will tell the load balancer to send clients to one of the nodes that was removed from the pool, which will usually return a TCP reset to the client since the node is no longer part of the load balancer's connection table. 
 
