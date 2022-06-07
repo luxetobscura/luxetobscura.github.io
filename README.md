@@ -1,3 +1,5 @@
+<img src="assets/logo.png" alt="" width="50"/>
+
 ## [luxetobscura.github.io](https://luxetobscura.github.io)
 This is my github.io page. There are many like it, but this one is mine.
 
