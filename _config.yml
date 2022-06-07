@@ -1,9 +1,7 @@
 lsi: false
 safe: true
 source: / 
-theme: minima
-minima:
-  skin: dark
+remote_theme: jekyll/minima
 incremental: false
 highlighter: rouge
 gist:
@@ -11,3 +9,7 @@ gist:
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
+minima:
+  skin: dark
+  social_links:
+    github: luxetobscura
