@@ -9,8 +9,10 @@ gist:
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
+plugins:
+  - jemoji
 minima:
   skin: dark
-  date_format: "%Y-%m-%d %H:%M"
+  date_format: "%Y-%m-%d"
   social_links:
     github: luxetobscura
