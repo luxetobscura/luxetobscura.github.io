@@ -14,5 +14,7 @@ plugins:
 minima:
   skin: dark
   date_format: "%Y-%m-%d"
+  header_pages:
+    - about.md
   social_links:
     github: luxetobscura
