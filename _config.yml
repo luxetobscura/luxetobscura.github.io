@@ -1,7 +1,7 @@
 lsi: false
 safe: true
 source: / 
-remote_theme: poole/poole
+remote_theme: poole/hyde`
 incremental: false
 highlighter: rouge
 gist:
