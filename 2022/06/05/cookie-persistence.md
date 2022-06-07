@@ -1,8 +1,12 @@
 ---
 layout: post
 title: "Load Balancers and HTTP Cookie Persistence"
-categories: http, cookies, load-balancers
+categories: load-balancers
 ---
+## How does cookie persistence work?
+
+Many load balancers can be configured for cookie-based persistence. When a client connects to a load-balanced virtual server to initiate an HTTP session, the load balancer can insert a platform-specific cookie in the HTTP response headers that typically contains the hashed/encoded value of a specific node `address:port` combination. The client's browser stores the persistence cookie and sends it on each subsequent request, and the load balancer directs the client's connection to the node specified in the cookie.
+
 ## Prerequisites
 
 - If a web application is secured with HTTPS, it should go without saying that any operation requiring the load balancer to modify the HTTP request or response (such as inserting an HTTP cookie header) will require the load balancer to terminate the client's TLS connection. That means configuring a public/private key pair for the X.509 certificate that the load balancer will present to the client, and sometimes also means ensuring that the load balancer can communicate with the backend web servers over HTTPS, which may require adding CA certificates to the load balancer if the backend servers use a private CA.
@@ -10,7 +14,7 @@ categories: http, cookies, load-balancers
 
 ## Troubleshooting
 
-Persistence cookies typically contain a hashed/encoded value that contains a specific node `address:port` combination. When the client's browser sends a request containing the persistence cookie, the load balancer directs the connection to the node specified in the cookie. When removing/decommissioning nodes from a load-balanced pool fronted by a virtual server that relies on cookie-insert persistence, keep in mind that clients will retain the persistence cookie that tells the load balancer to send them to a specific node. If not managed correctly, this will tell the load balancer to send clients to one of the nodes that was removed from the pool, which will usually return a TCP reset to the client since the node is no longer part of the load balancer's connection table. 
+When removing/decommissioning nodes from a load-balanced pool fronted by a virtual server that relies on cookie-insert persistence, keep in mind that clients will retain the persistence cookie that tells the load balancer to send them to a specific node. If not managed correctly, this will tell the load balancer to send clients to one of the nodes that was removed from the pool, which will usually return a TCP reset to the client since the node is no longer part of the load balancer's connection table. 
 
 Story time: a coworker of mine recently observed this behavior in the form of user complaints when they decommissioned two web servers, and proposed a few solutions:
 1. Tell users to clear their cookie for the website. Far from ideal - getting users to do what you want them to is often harder than getting computers to do what you want them to. However, the message would be simple enough for a helpdesk technician to communicate to the average user as a workaround in a pinch.
