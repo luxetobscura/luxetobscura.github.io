@@ -11,5 +11,6 @@ kramdown:
   syntax_highlighter: rouge
 minima:
   skin: dark
+  date_format: "%Y-%m-%d %H:%M"
   social_links:
     github: luxetobscura
