@@ -1,6 +1,9 @@
 lsi: false
 safe: true
 source: / 
+theme: minima
+minima:
+  skin: dark
 incremental: false
 highlighter: rouge
 gist:
