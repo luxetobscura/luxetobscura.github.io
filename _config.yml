@@ -1,7 +1,9 @@
 lsi: false
 safe: true
 source: / 
-remote_theme: poole/hyde
+theme: minima
+minima:
+  skin: dark
 incremental: false
 highlighter: rouge
 gist:
