@@ -2,26 +2,18 @@
 layout: page
 title: "principles"
 ---
-IT is about people, not computers.
-- Computers exist to facilitate the things that people do.
+**IT is about people, not technology.** Technology defines how people live, work, and play.
 
-Own your mistakes, and help prevent others from making the same mistakes that you have.
-- Not owning your mistakes is a quick path to ostracization.
+**Perception is reality.** Whatever people perceive is real to them.
 
-Maintain your poise.
-- A situation is never out of control until you lose control of yourself.
+**Own your mistakes.** Help prevent others from making the same mistakes that you have.
 
-Talk in a straight line.
-- Know what your point is before you start talking. Arrive there with the fewest detours possible.
+**Maintain your poise.** A situation isn't out of control until you lose control of yourself.
 
-Tailor your communication.
-- Know who you’re talking to and what the most important things on their mind are.
+**Talk in a straight line.** Know what your point is before you start talking. Arrive there with the fewest detours possible.
 
-Tread the line between efficiency and tact with deftness.
-- Whether simple or complex, communicate ideas and issues without coming across as unpleasant.
+**Tailor your communication.** Know who you’re talking to and what the most important things on their mind are.
 
-Seek outcomes. Think critically about processes and metrics.
-- Processes and metrics exist to help guide you to desired outcomes. Work to improve processes and metrics if they don't make sense.
+**Balance efficiency and tact.** Being concise and being cordial are not mutually exclusive. 
 
-Perception is reality.
-- People act on their perception. Whatever they perceive is their reality.
+**Seek outcomes.** Think critically about processes and metrics - they exist to help *guide* you to outcomes, but should not be the end-all be-all.
