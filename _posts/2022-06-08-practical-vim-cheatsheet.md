@@ -1,11 +1,11 @@
 ---
 layout: post
-title: ":memo: luxetobscura's practical `vim` cheatsheet"
+title: ":memo: Practical vim Cheatsheet"
 date: 2022-06-08
 ---
 This is my `vim` cheatsheet. There are many like it, but this one is mine.
 
-<img src="assets/get-that-vim-out-of-my-face.jpg" alt="yo, this is lowkey bussin'..." width="500"/>
+<img src="../assets/get-that-vim-out-of-my-face.jpg" alt="" width="500"/>
 
 This is mostly me trying to answer my perpetual question of "How did I do that one thing in `vim` that one time?" without losing valuable coding brain cycles flicking through tens of reference tabs. Here you go, future me. You're welcome.
 
@@ -17,7 +17,8 @@ This cheatsheet may be useful for the following audiences:
 - Me. I made this for myself. If you happen to find it useful, that's awesome too!
 
 ## Exiting
-"Oh no, I tried editing a file and it opened in `vi`/`vim`!" Pick your poison.
+"Oh no, I tried editing a file and it opened in `vi`/`vim`!" Pick your antidote.
+
 | Save | Exit  | Save and exit |
 | ---- | ----  | ------------- |
 | `:w` | `:q`  | `:wq`         |
