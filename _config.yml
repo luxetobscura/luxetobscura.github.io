@@ -11,10 +11,11 @@ kramdown:
   syntax_highlighter: rouge
 plugins:
   - jemoji
+header_pages:
+  - about.md
+  - principles.md
 minima:
   skin: dark
   date_format: "%Y-%m-%d"
-  header_pages:
-    - about.md
   social_links:
     github: luxetobscura
