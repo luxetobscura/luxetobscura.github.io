@@ -5,7 +5,7 @@ date: 2022-06-08
 ---
 This is my `vim` cheatsheet. There are many like it, but this one is mine.
 
-<img src="../assets/get-that-vim-out-of-my-face.jpg" alt="" width="500"/>
+<img src="https://luxetobscura.github.io/assets/get-that-vim-out-of-my-face.jpg" alt="" width="500"/>
 
 This is mostly me trying to answer my perpetual question of "How did I do that one thing in `vim` that one time?" without losing valuable coding brain cycles flicking through tens of reference tabs. Here you go, future me. You're welcome.
 
