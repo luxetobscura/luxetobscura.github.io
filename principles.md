@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Principles"
+title: "principles"
 ---
 - IT is about people, not computers.
   - Computers exist to facilitate the things that people do.
