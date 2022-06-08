@@ -1,11 +1,9 @@
 ---
 layout: post
-title: "Load Balancers and HTTP Cookie Persistence"
+title: ":cookie: Load Balancers and HTTP Cookie Persistence"
 date: 2022-06-05
 ---
-## :cookie: How does cookie persistence work?
-
-Many load balancers can be configured for cookie-based persistence. When a client connects to a load-balanced virtual server to initiate an HTTP session, the load balancer can insert a platform-specific cookie in the HTTP response headers that typically contains the hashed/encoded value of a specific node `address:port` combination. The client's browser stores the persistence cookie and sends it on each subsequent request, and the load balancer directs the client's connection to the node specified in the cookie.
+When a client connects to a load-balanced virtual server to initiate an HTTP session, the load balancer can insert a platform-specific cookie in the HTTP response headers that typically contains the hashed/encoded value of a specific node `address:port` combination. The client's browser stores the persistence cookie and sends it on each subsequent request, and the load balancer directs the client's connection to the node specified in the cookie.
 
 ## Prerequisites
 

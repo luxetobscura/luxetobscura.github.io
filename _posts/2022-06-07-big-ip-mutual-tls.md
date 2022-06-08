@@ -1,10 +1,8 @@
 ---
 layout: post
-title: "Mutual TLS"
+title: ":lock: Mutual TLS, aka Client Certificate Authentication"
 date: 2022-06-07
 ---
-## :lock: What is mutual TLS?
-
 Mutual TLS (commonly abbreviated "mTLS", and also referred to as "client certificate authentication") is an implementation of the TLS protocol for mutual authentication in a client-server model. Essentially, both the client *and* the server must trust each other to establish a mutual TLS session, as opposed to the default server-only authentication model that TLS is most commonly known for. The primary use cases I've observed for mTLS have been securing business-to-business HTTP traffic in highly regulated industries (such as healthcare and financial information exchange) and enforcement of zero-trust corporate networks.
 
 [IETF RFC 5246 (TLSv1.2), section 7.4.6](https://datatracker.ietf.org/doc/html/rfc5246#section-7.4.6) briefly describes the method by which a client can present its proof of identity (an X.509 certificate) to a server for mutual TLS, if the server prompts for one. The TL;DR is that you configure a server to ask for each client's public key, and the server verifies the client's public key against its PKI during the TLS handshake.

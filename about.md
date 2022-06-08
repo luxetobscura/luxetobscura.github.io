@@ -1,5 +1,5 @@
 ---
 layout: page
-title: "About"
+title: "about"
 ---
-<img src="assets/logo.png" alt="" width="50"/>
+<a href="https://github.com/luxetobscura/luxetobscura.github.io"><img src="assets/logo.png" alt="" width="50"/></a>
