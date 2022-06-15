@@ -5,6 +5,8 @@ date: 2022-06-12
 ---
 Certificate management is hard. Part of my job is to make it less hard.
 
+- [ ] To do: turn this into a [Mermaid diagram](https://mermaid-js.github.io/mermaid/#/flowchart)?
+
 ## Requirements
 
 * Certificates are valuable assets and should be treated as such. They are an approximation of a securable object's identity, whether that object is a person, machine, or application.
