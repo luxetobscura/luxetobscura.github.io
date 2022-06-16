@@ -2,18 +2,22 @@
 layout: page
 title: "principles"
 ---
-**IT is about people, not technology.** Technology defines how people live, work, and play.
+**IT is about people, not technology.** Technology serves people. Be wary of the inverse.
 
-**Perception is reality.** Whatever people perceive is real to them.
+**Seek outcomes.** Processes and metrics are guidelines, not substitutes, for outcomes.
 
-**Own your mistakes.** Help prevent others from making the same mistakes that you have.
+**Be relentless.** Perfect may be the enemy of good, but mediocre is the enemy of all.
 
-**Maintain your poise.** A situation isn't out of control until you lose control of yourself.
+**Optimize your effort.** Just because you spent a lot of effort on something doesn't mean it's good.
+
+**Own your mistakes.** Failure is inevitable. Defeat occurs only when you fail to address your failures.
+
+**Perception is reality.** Whatever people perceive is real to them, for better or worse.
+
+**Maintain your poise.** Lose control of yourself, lose control of the situation.
 
 **Talk in a straight line.** Know what your point is before you start talking. Arrive there with the fewest detours possible.
 
-**Tailor your communication.** Know who you’re talking to and what the most important things on their mind are.
+**Tailor your communication.** Know who you’re talking to and what they care about.
 
 **Balance efficiency and tact.** Being concise and being cordial are not mutually exclusive. 
-
-**Seek outcomes.** Think critically about processes and metrics - they exist to help *guide* you to outcomes, but should not be the end-all be-all.
