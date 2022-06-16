@@ -2,4 +2,4 @@
 layout: page
 title: "about"
 ---
-Computers are hard. I try to make them less hard.
+I learn things about computers and sometimes remember to write those things down.
