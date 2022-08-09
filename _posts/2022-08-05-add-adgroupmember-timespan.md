@@ -1,9 +1,9 @@
 ---
 layout: post
-title: ":clock: Add-ADGroupMember and Time-Based AD Group Membership"
+title: ":clock3: Add-ADGroupMember and Time-Based AD Group Membership"
 date: 2022-08-05
 ---
-I learned the hard way that time-based AD group membership must last for at least one millisecond. Here's how I found out.
+Did you know that time-based AD group membership has to last for at least one millisecond? Here's how I found out.
 
 ## Active Directory Privileged Access Management
 
@@ -24,23 +24,21 @@ The team I currently work with maintains a self-service web portal based on Mark
 
 ```powershell
 # Parameters from user input
-$startDate = Get-Date '2022/08/01' 
-$endDate = Get-Date '2022/08/05'
-$targetGroup = Get-ADGroup -Identity 'Target Group Name'
-$memberGroup = Get-ADGroup -Identity 'Username'
+$startDate = Get-Date '2022/08/01 13:00' 
+$endDate   = Get-Date '2022/08/01 13:30'
 
 # Calculate access duration
 $timeSpan = $endDate - $startDate
 
 # Add user to group
-Add-ADGroupMember -Identity $targetGroup -Members $memberGroup -MemberTimeToLive $timeSpan
+Add-ADGroupMember -Identity 'GroupName' -Members 'Username' -MemberTimeToLive $timeSpan
 ```
 
 A few hours of testing and change control later, I merged my changes to our PAM scripts, and moseyed on home.
 
 ### Smelling smoke
 
-The first issue manifested about a week later. A number of my teammates had successfully granted their user accounts temporary elevated access via the self-service portal for change tasks, and I had confirmed their membership expiry in our SIEM system. As I sipped my afternoon tea, supremely satisfied with my minor improvement, a clever thought crossed my mind - I had a 30-minute change window coming up the next day that required similar elevated access. *What if I scheduled elevated access for my user account in advance for the exact duration of time that I would need it for?*
+The first issue manifested about a week later. A number of my teammates had successfully granted their user accounts temporary elevated access via the self-service portal for change tasks, and I had confirmed their membership expiry in our SIEM system. As I sipped my afternoon tea, supremely satisfied with my minor improvement, a clever thought crossed my mind - I had a 30-minute change window coming up the next day at 10 AM that required similar elevated access. *What if I scheduled elevated access for my user account in advance for the exact duration of time that I would need it for?*
 
 ```powershell
 # PowerShell representation of the values I filled out in the self-service web form
@@ -76,13 +74,11 @@ TotalMinutes      Property   double TotalMinutes {get;}
 TotalSeconds      Property   double TotalSeconds {get;}
 ```
 
-After realizing my rookie mistake, one swift commit later and I had moved `startDate` from a parameter to an internal variable, with an additional bit of help text stating that the scripts would grant just-in-time access. The code now looked like this:
+After realizing my rookie mistake, one swift commit later and I had moved `startDate` from a parameter to an internal variable, with an additional bit of help text stating that the scripts would grant just-in-time access.[](https://multitwitch.tv/evo/evo2/evo3/evo4/evo5/evo6/evo7/teamsp00ky/playstation) The code now looked like this:
 
 ```powershell
 # Parameters from user input
-$endDate = Get-Date '2022/08/05'
-$targetGroup = Get-ADGroup -Identity 'Target Group Name'
-$memberGroup = Get-ADGroup -Identity 'Username'
+$endDate = Get-Date '2022/08/02 13:30'
 
 # startDate is now calculated at script runtime
 $startDate = (Get-Date).Date
@@ -91,11 +87,25 @@ $startDate = (Get-Date).Date
 $timeSpan = $endDate - $startDate
 
 # Add user to group
-Add-ADGroupMember -Identity $targetGroup -Members $memberGroup -MemberTimeToLive $timeSpan
+Add-ADGroupMember -Identity 'GroupName' -Members 'Username' -MemberTimeToLive $timeSpan
 ```
 
 This time, I went home rather sheepishly at the end of the day, having been gently chided for such a simple oversight by the senior engineer who reviewed my merge request.
 
 ### Detonation
 
-A month later, the PAM portal had been adopted into use by a number of other teams, including application operators. 
+A month later, PAM portal usage had spread to other teams, and had become an integral part of our change control process. While refactoring the script to fit other teams' needs, I decided to condense the date calculation:
+
+```powershell
+$timeSpan = $endDate - (Get-Date)
+```
+
+Considering this a minor change, I was allowed to merge the change with minimal pomp and circumstance.
+
+Then everything broke.
+
+Here's what happened:
+
+```
+Add-ADGroupMember: The parameter is incorrect.
+```
