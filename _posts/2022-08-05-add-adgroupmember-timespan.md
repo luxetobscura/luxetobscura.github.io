@@ -189,6 +189,7 @@ while ($ticks -le 10000) {
       Add-ADGroupMember -Identity 'GroupName' -Members 'Username' -MemberTimeToLive $timeSpan
    }
    catch {}
+   $ticks++
 }
 ```
 
