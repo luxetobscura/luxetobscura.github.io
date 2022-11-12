@@ -12,9 +12,10 @@ When a client connects to a load-balanced virtual server to initiate an HTTP ses
 
 ## Troubleshooting
 
-When removing/decommissioning nodes from a load-balanced pool fronted by a virtual server that relies on cookie-insert persistence, keep in mind that clients will retain the persistence cookie that tells the load balancer to send them to a specific node. If not managed correctly, this will tell the load balancer to send clients to one of the nodes that was removed from the pool, which will usually return a TCP reset to the client since the node is no longer part of the load balancer's connection table. 
+When removing/decommissioning nodes from a load-balanced pool fronted by a virtual server that relies on cookie-insert persistence, keep in mind that clients will retain the persistence cookie that tells the load balancer to send them to a specific node. If not managed correctly, this will tell the load balancer to send clients to one of the nodes that was removed from the pool, which will usually return a TCP reset to the client since the node is no longer part of the load balancer's connection table.
 
 Story time: a coworker of mine recently observed this behavior in the form of user complaints when they decommissioned two web servers, and proposed a few solutions:
+
 1. Tell users to clear their cookie for the website. Far from ideal - getting users to do what you want them to is often harder than getting computers to do what you want them to. However, the message would be simple enough for a helpdesk technician to communicate to the average user as a workaround in a pinch.
 2. Change the persistence configuration on the virtual server. The virtual server in question was configured to present HTTP session persistence cookies by default. This meant that the persistence cookie lifespan was at the mercy of each client's browser to determine what an "HTTP session" was. For most modern browsers, this almost certainly meant "until the browser window is closed." While a time-based cookie expiration could be configured, the existing cookies cached by client browsers still had to be addressed.
 

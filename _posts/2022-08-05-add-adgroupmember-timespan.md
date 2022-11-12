@@ -12,6 +12,7 @@ The Windows Server 2016 AD forest functional level introduced [Privileged Access
 ## MemberTimeToLive
 
 If there is one thing that you take away from this article, remember this:
+
 1. **The `MemberTimeToLive` parameter requires a [`TimeSpan`](https://docs.microsoft.com/en-us/dotnet/api/system.timespan?view=net-6.0) object as input.**
 
 This seemingly innocuous statement may come across as patronizingly obvious, especially if you have already read `Get-Help Add-ADGroupMember`, but there are several interesting implications that led to me being hoisted by my own petard.
@@ -106,7 +107,7 @@ Then everything broke.
 
 The following extremely specific error message presented itself:
 
-```
+```text
 Add-ADGroupMember: The parameter is incorrect.
 ```
 

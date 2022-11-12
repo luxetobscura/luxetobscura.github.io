@@ -10,6 +10,7 @@ Mutual TLS (commonly abbreviated "mTLS", and also referred to as "client certifi
 ## Configuring mutual TLS
 
 Regardless of platform, there is a common set of requirements to enforce mutual TLS on a server:
+
 - This should go without saying, but the server must be configured to terminate client TLS connections. In other words, server TLS is a prerequisite for mutual TLS, so the server must be configured with its own public/private key pair.
 - The server must be configured to issue a client authentication challenge.
 - One or more certificate authorities must be specified against which the server should verify the identities of each client. This is usually in the form of a single file containing the concatenated X.509 certificates for the full trust chain of each certificate authority.
@@ -17,7 +18,7 @@ Regardless of platform, there is a common set of requirements to enforce mutual 
 
 ## Troubleshooting
 
-The most common mutual TLS issues that I've observed typically arise from misconfigurations. Some of them are honest oversights; others originate from fundamental misunderstandings about how mutual TLS works. 
+The most common mutual TLS issues that I've observed typically arise from misconfigurations. Some of them are honest oversights; others originate from fundamental misunderstandings about how mutual TLS works.
 
 - The full CA chain is not specified on the server. Most modern browsers are intelligent enough to automatically complete any missing intermediate CA certs in a CA chain, but this isn't a guarantee for mobile browsers and IoT devices.
 - Outbound internet access over TCP port 80 is denied, preventing the server from performing CRL checks. Depending on the strictness of the server's TLS implementation, this can either manifest as a long delay while the CRL check fails open, or the TLS handshake simply fails closed and returns a TCP reset.
