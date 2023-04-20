@@ -12,6 +12,7 @@ kramdown:
   syntax_highlighter: rouge
 plugins:
   - jemoji
+  - jekyll-feed
 header_pages:
   - about.md
   - principles.md
