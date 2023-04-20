@@ -2,4 +2,4 @@
 layout: page
 title: "about"
 ---
-I learn things about computers and sometimes remember to write those things down.
+I learn things about technology and sometimes remember to write those things down.
