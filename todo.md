@@ -12,3 +12,4 @@
 - Cert lifecycle
   - Review and update
   - Add Mermaid diagram
+- [Project list](https://github.com/luxetobscura/junk-drawer/blob/main/project-list.md)
