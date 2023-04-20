@@ -1,7 +1,7 @@
 # Jekyll YAML
 lsi: false
 safe: true
-source: / 
+source: /
 remote_theme: jekyll/minima
 incremental: false
 highlighter: rouge
@@ -21,4 +21,11 @@ minima:
   skin: dark
   date_format: "%Y-%m-%d"
   social_links:
-    github: luxetobscura
+    - {
+        platform: github,
+        user_url: "https://github.com/luxetobscura"
+      }
+    - {
+        platform: rss,
+        user_url: "https://luxetobscura.github.io/feed.xml"
+      }
