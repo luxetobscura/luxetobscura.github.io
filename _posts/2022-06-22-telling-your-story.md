@@ -42,5 +42,5 @@ In short, it's best to think of STAR not as a *template*, but as a *linter* for 
 
 ## Inspiration
 
-- [A Life Engineered | How to Tell a Good Story](https://www.youtube.com/watch?v=hU6BVxtGd5g)
-- [Masahiro Sakurai on Creating Games | Mountain Climbing Is More Than Just Climbing](<https://www.youtube.com/watch?v=Be6km65CuuM>)
+- [A Life Engineered: How to Tell a Good Story](https://www.youtube.com/watch?v=hU6BVxtGd5g)
+- [Masahiro Sakurai on Creating Games: Mountain Climbing Is More Than Just Climbing](<https://www.youtube.com/watch?v=Be6km65CuuM>)
