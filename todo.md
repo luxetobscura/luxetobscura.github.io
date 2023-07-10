@@ -9,15 +9,21 @@
   - Testing C# build scripts with Pester
   - Creating a build stage to run Pester tests with Gitlab CI
 - Productivity and tools
+  - Opinion: tools matter, in spite of industry studies
+    - Forming emotional attachments to tools is not only natural but important
+    - See: using emotions to inform decisions (when I've written that article)
+    - *Mise en place* and deriving joy from physicality
   - One Year of Vim
   - One Year of Neovim (deadline: 2024-05-01)
   - Dotfiles
-  - *Mise en place* and deriving joy from physicality
 - Cert lifecycle
   - ACME pros and cons
   - Add Mermaid diagram
-- [Project list](https://github.com/luxetobscura/junk-drawer/blob/main/project-list.md)
 - Continuous Incidents/Continuous Destruction, aka how not to do CI/CD
+- "Software must work."
+- Avoiding design failures by seeking early, immediate user feedback
+- "The most important programming language is English": the bidirectional influences of language and technology
+- [Project list](https://github.com/luxetobscura/junk-drawer/blob/main/project-list.md)
 
 ## Human stuff (PeopleOps?)
 
@@ -25,24 +31,38 @@
 - Essential guide for the unwilling leader, aka finding the energy to keep caring when nobody else around you does
 - Becoming the shot-caller, aka building a technical career by calling people idiots
   - The most important part: you don't actually call them idiots. Only an idiot would do that.
+- Enshittification
+  - [Pluralistic: Tiktok’s enshittification (21 Jan 2023) – Pluralistic: Daily links from Cory Doctorow](https://pluralistic.net/2023/01/21/potemkin-ai/#hey-guys)
+  - "When somebody says it's not about the money, it's about the money." aka losing sight of a vision by optimizing for cost
 - Thinking about thinking
   - Article: [Thinking about Thinking](http://datapacrat.com/Opinion/Reciprocality/r0/Day1.html)
   - Learning to learn
+    - The cycle: consume, imitate, iterate, extrapolate, create (surely someone else has a more eloquent way to express this)
     - Seeking understanding converges on desired outcomes
     - Seeking outcomes does not necessarily converge on understanding
-    - What does "perfect practice makes perfect" actually mean? (Imperfect practice *with instant feedback* makes perfect practice)
     - The importance of coaching/mentoring
+    - What does "perfect practice makes perfect" actually mean? (Imperfect practice *with instant feedback* makes perfect practice)
+    - Seeking validation without breaking yourself: safe spaces vs. broadcast media
   - Context is literally everything, perception is equivalent to reality, and opinions are more valuable than facts
   - History as a subject (packets) vs. history as a tool (maps)
   - The inheritance of knowledge and the three-generation curse (富不过三代)
-  - The importance of diversity and cross-domain knowledge
+  - Using emotions to healthily inform your decisions
+  - Separating art from the artist is literally impossible (Adam Neely clip)
   - Priming the mental stack, aka how preparation leads to flow state/"faster reflexes"
+    - Shower thoughts and long walks: decompression, reflection, and introspection
+    - Andre Agassi's autobiography, p.9: "I've won 869 matches in my careeer, [...] and many were won during the afternoon shower."
+    - Side note: is "mental fortitude" a form of delusion?
+  - The importance of diversity and cross-domain knowledge
+    - Sports/fighting games: coaching, competition, continuous improvement, independence and self-reliance
+    - Culinary service: competition, service focus, teamwork, workspaces, and tooling
+    - MMORPGs: team building, conflict resolution, crab mentality, dealing with burnout, creating meaningful relationships in transactional frameworks
+    - Biochemistry and medicine: learning hard lessons about academia, knowing when something isn't a good fit, breaking out of "packer" mentality
+    - Chemical and electrical engineering: breaking into "mapper" mentality, generalizing knowledge, seeking understanding
   - Deduplicating the sum total of human knowledge, aka reducing the signal-to-noise ratio
     - How do you determine the value of information?
     - Sieving non-information and disinformation ("noise")
+    - The gerrymandered line between moderation and censorship
     - Bonus: can generative AI ever produce "valuable" information?
   - Chesterton's Fence and combating cultural stagnation
-  - Using emotions to healthily inform your decisions
   - Constructive vs. destructive nihilism, aka how a webcomic ignited my existential dread, and how No Man's Sky cured it
-  - "The most useful programming language is English": the bidirectional influences of language and technology
 - Does taxonomy actually matter? How important are names, labels, and categories?
