@@ -9,10 +9,13 @@
   - Testing C# build scripts with Pester
   - Creating a build stage to run Pester tests with Gitlab CI
 - Productivity and tools
-  - Opinion: tools matter, in spite of industry studies
+  - Opinion: tools matter!
     - Forming emotional attachments to tools is not only natural but important
     - See: using emotions to inform decisions (when I've written that article)
+    - However, recognizing when tools are causing you pain is also important
+    - Plan for emotional separation and continuous tech debt eval + payback if the tool is no longer a good fit
     - *Mise en place* and deriving joy from physicality
+    - Smithing: when to buy vs. forge your own tools
   - One Year of Vim
   - One Year of Neovim (deadline: 2024-05-01)
   - Dotfiles
@@ -23,6 +26,7 @@
 - "Software must work."
 - Avoiding design failures by seeking early, immediate user feedback
 - "The most important programming language is English": the bidirectional influences of language and technology
+- Thoughtful automation: prioritization and optimization for varying use cases (inspired by [Google - Site Reliability Engineering](https://sre.google/sre-book/automation-at-google/))
 - [Project list](https://github.com/luxetobscura/junk-drawer/blob/main/project-list.md)
 
 ## Human stuff (PeopleOps?)
@@ -53,11 +57,11 @@
     - Andre Agassi's autobiography, p.9: "I've won 869 matches in my careeer, [...] and many were won during the afternoon shower."
     - Side note: is "mental fortitude" a form of delusion?
   - The importance of diversity and cross-domain knowledge
-    - Sports/fighting games: coaching, competition, continuous improvement, independence and self-reliance
-    - Culinary service: competition, service focus, teamwork, workspaces, and tooling
-    - MMORPGs: team building, conflict resolution, crab mentality, dealing with burnout, creating meaningful relationships in transactional frameworks
-    - Biochemistry and medicine: learning hard lessons about academia, knowing when something isn't a good fit, breaking out of "packer" mentality
-    - Chemical and electrical engineering: breaking into "mapper" mentality, generalizing knowledge, seeking understanding
+    - Sports/fighting games: fundamentals, coaching, competition, continuous improvement, independence and self-reliance
+    - Culinary service: fundamentals, task breakdown, competition, service focus, teamwork, workspaces, tooling, process improvement, continuous improvement
+    - MMORPGs: solution optimization, team building, conflict resolution, crab mentality, dealing with burnout, creating meaningful relationships in transactional frameworks
+    - Biochemistry and medicine: learning hard lessons about academia, knowing when something isn't a good fit, breaking out of "packer" mentality (mapping "things" to "systems")
+    - Chemical and electrical engineering: breaking into "mapper" mentality, generalizing knowledge, seeking understanding, systems design, safety engineering, scrutinizing heuristics as a substitute for understanding
   - Deduplicating the sum total of human knowledge, aka reducing the signal-to-noise ratio
     - How do you determine the value of information?
     - Sieving non-information and disinformation ("noise")
