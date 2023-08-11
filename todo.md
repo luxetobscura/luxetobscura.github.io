@@ -14,7 +14,7 @@
     - See: using emotions to inform decisions (when I've written that article)
     - However, recognizing when tools are causing you pain is also important
     - Plan for emotional separation and continuous tech debt eval + payback if the tool is no longer a good fit
-    - *Mise en place* and deriving joy from physicality
+    - _Mise en place_ and deriving joy from physicality
     - Smithing: when to buy vs. forge your own tools
   - One Year of Vim
   - One Year of Neovim (deadline: 2024-05-01)
@@ -27,6 +27,7 @@
 - Avoiding design failures by seeking early, immediate user feedback
 - "The most important programming language is English": the bidirectional influences of language and technology
 - Thoughtful automation: prioritization and optimization for varying use cases (inspired by [Google - Site Reliability Engineering](https://sre.google/sre-book/automation-at-google/))
+- Why do I like tools, systems, and services?
 - [Project list](https://github.com/luxetobscura/junk-drawer/blob/main/project-list.md)
 
 ## Human stuff (PeopleOps?)
@@ -45,7 +46,7 @@
     - Seeking understanding converges on desired outcomes
     - Seeking outcomes does not necessarily converge on understanding
     - The importance of coaching/mentoring
-    - What does "perfect practice makes perfect" actually mean? (Imperfect practice *with instant feedback* makes perfect practice)
+    - What does "perfect practice makes perfect" actually mean? (Imperfect practice _with instant feedback_ makes perfect practice)
     - Seeking validation without breaking yourself: safe spaces vs. broadcast media
   - Context is literally everything, perception is equivalent to reality, and opinions are more valuable than facts
   - History as a subject (packets) vs. history as a tool (maps)
