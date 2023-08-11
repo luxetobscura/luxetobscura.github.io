@@ -51,7 +51,12 @@
   - Context is literally everything, perception is equivalent to reality, and opinions are more valuable than facts
   - History as a subject (packets) vs. history as a tool (maps)
   - The inheritance of knowledge and the three-generation curse (富不过三代)
-  - Using emotions to healthily inform your decisions
+  - Making better decisions
+    - Using emotions to healthily _inform_ your decisions, not _dictate_ them
+    - Decision journals: snapshotting and reflecting on _why_ you made a decision
+      - Software design docs and IT change control (RFCs)
+    - Nth-order thinking and _yomi_: (over)thinking ahead
+    - Tech debt: making new decisions to eliminate drawbacks of previous ones
   - Separating art from the artist is literally impossible (Adam Neely clip)
   - Priming the mental stack, aka how preparation leads to flow state/"faster reflexes"
     - Shower thoughts and long walks: decompression, reflection, and introspection
